@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
         if (resultCode == Activity.RESULT_OK) {
             if (requestCode == Constants.GPS_REQUEST) {
                 isGPS = true; // flag maintain before get location
+                getCurrentLocation();
             }
         }
     }
